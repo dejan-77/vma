@@ -42,6 +42,11 @@
                          transition:all 1s ease;
     }*/
 
+ /* MULTIPLY */
+ 
+ .multiply {
+    mix-blend-mode: multiply;
+  }
 
 /* Barba overlay blue */
  .loader {
