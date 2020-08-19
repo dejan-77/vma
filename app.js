@@ -80,7 +80,7 @@ document.addEventListener ('DOMContentLoaded', ()=> {
       //.from(".small-link", {x:-40, stagger:0.1, opacity:0, duration:0.3, ease: "power1.out"}, "<")
       //.from(".wg-element-wrapper", {opacity:0, duration:0.3}, "<0.5")
       
-      .set(".nav-mask, .nav-toggle", {pointerEvents: "all"}, "<")
+      .set(".nav-toggle", {pointerEvents: "all"}, "<")
   
   }
   // --- SHOW
