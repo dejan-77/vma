@@ -71,7 +71,7 @@ document.addEventListener ('DOMContentLoaded', ()=> {
     //gsap.set(".fs-menu--column", {yPercent:-100})
     gsap.set(".close", {autoAlpha:0})
     
-    tl.fromTo(".nav-mask", {width: "0%", transformOrigin: "left center"}, {duration: 0.3, width: "100%"})
+    tl.fromTo(".nav-mask", {width: "0%", transformOrigin: "left center"}, {duration: 1, width: "100%"})
       //.to(".fs-menu--column", {yPercent:0, duration:0.4, stagger:0.05, ease: "Expo.inOut"}, "<")
       .to(".open", {autoAlpha:0}, "<")
       .to(".close", {autoAlpha:1}, "<")
@@ -90,7 +90,7 @@ document.addEventListener ('DOMContentLoaded', ()=> {
     gsap.set(".nav-wrapper, .nav-toggle", {pointerEvents: "none"});
   
       //tl.fromTo(".fs-menu--column", {yPercent:0}, {yPercent:-100, duration:0.4, stagger:0.05, ease: "Expo.inOut"})
-      tl.to(".nav-mask", { duration: 0.3, transformOrigin: "right center", width: "0%"})
+      tl.to(".nav-mask", { duration: 1, transformOrigin: "right center", width: "0%"})
       .to(".open", {autoAlpha:1}, "<")
       .to(".close", {autoAlpha:0}, "<")
       
