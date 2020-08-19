@@ -38,17 +38,12 @@ ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
 ScrollTrigger.refresh();
 
 
-/* FULLSCREEN NAV */
-
+/* FULLSCREEN NAVIGATION */
 
 // PLAY WHEN ALL CONTENT LOADED
 document.addEventListener ('DOMContentLoaded', ()=> {
 
-  // OPEN MENU FROM CLICK
-  //const openmenu = document.getElementById('openmenu');
-  //const closemenu = document.getElementById('closemenu');
-  //const menuhover = document.getElementById('menuhover');
-  
+ 
   
   const { gsap } = window;
   
@@ -67,7 +62,7 @@ document.addEventListener ('DOMContentLoaded', ()=> {
   function show() {
     let tl = gsap.timeline();
   
-  gsap.set(".nav-mask, .nav-toggle", {pointerEvents: "none"});
+  gsap.set(".nav-toggle", {pointerEvents: "none"});
     //gsap.set(".fs-menu--column", {yPercent:-100})
     gsap.set(".close", {autoAlpha:0})
     
@@ -87,7 +82,7 @@ document.addEventListener ('DOMContentLoaded', ()=> {
   function hide() {
     let tl = gsap.timeline();
   
-    gsap.set(".nav-wrapper, .nav-toggle", {pointerEvents: "none"});
+    gsap.set(".nav-toggle", {pointerEvents: "none"});
   
       //tl.fromTo(".fs-menu--column", {yPercent:0}, {yPercent:-100, duration:0.4, stagger:0.05, ease: "Expo.inOut"})
       tl.to(".nav-mask", { duration: 0.3, transformOrigin: "right center", width: "0%"})
