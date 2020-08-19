@@ -36,3 +36,65 @@ ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
 
 // after everything is set up, refresh() ScrollTrigger and update LocomotiveScroll because padding may have been added for pinning, etc.
 ScrollTrigger.refresh();
+
+
+/* FULLSCREEN NAV */
+
+
+// PLAY WHEN ALL CONTENT LOADED
+document.addEventListener ('DOMContentLoaded', ()=> {
+
+  // OPEN MENU FROM CLICK
+  const openmenu = document.getElementById('openmenu');
+  const closemenu = document.getElementById('closemenu');
+  //const menuhover = document.getElementById('menuhover');
+  
+  
+  const { gsap } = window;
+  
+  const btn = document.querySelector(".nav-toggle");
+  
+  btn.addEventListener("click", () => {
+    if (btn.classList.contains("active")) {
+      btn.classList.remove("active");
+      hide();
+    } else {
+      btn.classList.add("active");
+      show();
+    }
+  });
+  // --- SHOW
+  function show() {
+    let tl = gsap.timeline();
+  
+    gsap.set(".nav-mask, .nav-toggle", {pointerEvents: "none"});
+    //gsap.set(".fs-menu--column", {yPercent:-100})
+    gsap.set(".close", {autoAlpha:0})
+    
+    tl.fromTo(".nav-mask", {width: "0%", transformOrigin: "left center"}, {duration: 0.3, width: "100%"})
+      //.to(".fs-menu--column", {yPercent:0, duration:0.4, stagger:0.05, ease: "Expo.inOut"}, "<")
+      .to(".open", {autoAlpha:0}, "<")
+      .to(".close", {autoAlpha:1}, "<")
+      
+      //.from(".main-link", {x:-40, stagger:0.1, opacity:0, duration:0.3, ease: "power1.out"}, "<0.3")
+      //.from(".small-link", {x:-40, stagger:0.1, opacity:0, duration:0.3, ease: "power1.out"}, "<")
+      //.from(".wg-element-wrapper", {opacity:0, duration:0.3}, "<0.5")
+      
+      .set(".nav-mask, .nav-toggle", {pointerEvents: "all"}, "<")
+  
+  }
+  // --- SHOW
+  function hide() {
+    let tl = gsap.timeline();
+  
+    gsap.set(".nav-wrapper, .nav-toggle", {pointerEvents: "none"});
+  
+      //tl.fromTo(".fs-menu--column", {yPercent:0}, {yPercent:-100, duration:0.4, stagger:0.05, ease: "Expo.inOut"})
+      tl.to(".nav-mask", { duration: 0.3, transformOrigin: "right center", width: "0%"})
+      .to(".open", {autoAlpha:1}, "<")
+      .to(".close", {autoAlpha:0}, "<")
+      
+      .set(" .nav-toggle", { pointerEvents: "all"});
+    
+  }
+  
