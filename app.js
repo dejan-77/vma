@@ -94,7 +94,7 @@ document.addEventListener ('DOMContentLoaded', ()=> {
       .to(".open", {autoAlpha:1}, "<")
       .to(".close", {autoAlpha:0}, "<")
       
-     // .set(" .nav-toggle", { pointerEvents: "all"});
+      .set(" .nav-toggle", { pointerEvents: "all"});
     
   }
 });
