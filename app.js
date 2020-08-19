@@ -67,7 +67,7 @@ document.addEventListener ('DOMContentLoaded', ()=> {
   function show() {
     let tl = gsap.timeline();
   
-    gsap.set(".nav-mask, .nav-toggle", {pointerEvents: "none"});
+   // gsap.set(".nav-mask, .nav-toggle", {pointerEvents: "none"});
     //gsap.set(".fs-menu--column", {yPercent:-100})
     gsap.set(".close", {autoAlpha:0})
     
@@ -80,7 +80,7 @@ document.addEventListener ('DOMContentLoaded', ()=> {
       //.from(".small-link", {x:-40, stagger:0.1, opacity:0, duration:0.3, ease: "power1.out"}, "<")
       //.from(".wg-element-wrapper", {opacity:0, duration:0.3}, "<0.5")
       
-      .set(".nav-mask, .nav-toggle", {pointerEvents: "all"}, "<")
+     // .set(".nav-mask, .nav-toggle", {pointerEvents: "all"}, "<")
   
   }
   // --- SHOW
@@ -94,7 +94,7 @@ document.addEventListener ('DOMContentLoaded', ()=> {
       .to(".open", {autoAlpha:1}, "<")
       .to(".close", {autoAlpha:0}, "<")
       
-      .set(" .nav-toggle", { pointerEvents: "all"});
+     // .set(" .nav-toggle", { pointerEvents: "all"});
     
   }
-})
+});
