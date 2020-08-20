@@ -48,6 +48,12 @@
     mix-blend-mode: multiply;
   }
 
+ /* VISIBILITY NONE */
+ .zero {
+    visibility: hidden;
+}
+ 
+
 /* Barba overlay blue */
  .loader {
     visibility: hidden;

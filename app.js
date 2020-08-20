@@ -96,4 +96,34 @@ document.addEventListener ('DOMContentLoaded', ()=> {
       .set(" .nav-toggle", { pointerEvents: "all"});
     
   }
-});
+
+// PROJECTS SWITCH LINE & THUMBNAIL
+
+    var buttons = $(".but");
+    var boxes = $(".projekti-box");
+    
+    gsap.set("#box2", {autoAlpha:0})
+    buttons.click(function() {
+        var i = $(this).index(".but");
+        gsap.to(".projekti-box", {duration:0.3, autoAlpha:0});
+        gsap.to(boxes[i], {duration:0.3, autoAlpha:1});
+    });
+    
+    $("#but6").click(function() {
+        gsap.to(boxes, {duration:0.3, autoAlpha:1});
+    });
+    
+    $("#but7").click(function() {
+        gsap.to(boxes, {duration:0.3, autoAlpha:0});
+    });
+    
+
+
+
+
+
+
+
+
+
+}); // DOM CONTENT LOADED
