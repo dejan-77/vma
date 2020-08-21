@@ -100,6 +100,8 @@ document.addEventListener ('DOMContentLoaded', ()=> {
     
   }
 
+
+  
 // HIDE MENU WHEN CLICK ON LINK
 /*
 var linkclose = document.querySelector('.link-nav');
