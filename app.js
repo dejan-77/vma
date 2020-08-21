@@ -91,7 +91,8 @@ document.addEventListener ('DOMContentLoaded', ()=> {
       
       //tl.to(".v-menu", { rotate: 360, duration: 0.3, stagger: 0.1, transformOrigin: "right center"})
       
-      tl.to(".nav-mask", { duration: 0.8, clipPath:"polygon(0 0, 0 0, 0 100%, 0% 100%)"})
+      tl.fromTo(".nav-mask", {clipPath:"polygon(0 0, 100% 0, 100% 100%, 0% 100%)"}, 
+      {duration: 1, ease: "power1.inOut", clipPath:"polygon(84% 0, 100% 0, 100% 100%, 87% 100%)"})
       .to(".open", {autoAlpha:1}, "<")
       .to(".close", {autoAlpha:0}, "<")
       
