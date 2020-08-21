@@ -80,7 +80,7 @@ document.addEventListener ('DOMContentLoaded', ()=> {
       .set(".nav-toggle", {pointerEvents: "all"}, "<")
   
   }
-  // --- SHOW
+  // --- HIDE
   function hide() {
     let tl = gsap.timeline();
   
@@ -99,6 +99,16 @@ document.addEventListener ('DOMContentLoaded', ()=> {
       .set(" .nav-toggle", { pointerEvents: "all"});
     
   }
+
+// HIDE MENU WHEN CLICK ON LINK
+
+const linkclose = document.querySelectorAll(".link-nav");
+
+linkclose.addEventListener("click", function() {
+   hide();
+  });
+
+
 
 // --- MENU HOVER BLUE LINE ----
 
