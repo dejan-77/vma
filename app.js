@@ -100,7 +100,7 @@ document.addEventListener ('DOMContentLoaded', ()=> {
     
   }
 
-// --- MENU HOVER BLUE LINE
+// --- MENU HOVER BLUE LINE 
 
 // Mouseenter function
 function enterAnimation(link, e, index) {
