@@ -106,6 +106,7 @@ const linkclose = document.querySelectorAll(".link-nav");
 
 linkclose.addEventListener("click", function() {
    hide();
+   console.log("cliknujo sam na LINK");
   });
 
 
