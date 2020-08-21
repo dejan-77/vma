@@ -122,13 +122,13 @@ workLinks.forEach((link, index, value) => {
   let underline = link.querySelector(".menu-lajna");
     link.tl = gsap.timeline({paused: true});
   
-  link.tl.fromTo(underline, {scaleX: 0}, 
-  {scaleX: 1, duration: 0.3, ease: "power1.out",});
+  link.tl.fromTo(underline, {yPercent: 0, left: "0%",}, 
+  {yPercent: 100, duration: 0.3, ease: "power1.out",});
   		
   link.tl.add("midway");
   
-  link.tl.fromTo(underline, {scaleX: 1}, 
-  {scaleX: 0,  duration: 0.3, ease: "power1.in", immediateRender: false});
+  link.tl.fromTo(underline, {yPercent: 100, left: "0%",}, 
+  {yPercent: 0, left: "100%", duration: 0.3, ease: "power1.in", immediateRender: false});
 
   // Mouseenter
   link.addEventListener("mouseenter", (e) => {
