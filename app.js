@@ -66,7 +66,9 @@ document.addEventListener ('DOMContentLoaded', ()=> {
     //gsap.set(".fs-menu--column", {yPercent:-100})
     gsap.set(".close", {autoAlpha:0})
     
-    tl.fromTo(".nav-mask", {width: "0%", transformOrigin: "left center"}, {duration: 0.3, width: "100%"})
+   // tl.fromTo(".nav-mask", {width: "0%", transformOrigin: "left center"}, {duration: 0.3, width: "100%"})
+   tl.fromTo(".nav-mask", {clipPath:"polygon(0 0, 0 0, 0 100%, 0% 100%)"}, 
+   {delay:0.3, clipPath:"polygon(0 0, 100% 0, 100% 100%, 0% 100%)"})
       //.to(".fs-menu--column", {yPercent:0, duration:0.4, stagger:0.05, ease: "Expo.inOut"}, "<")
       .to(".open", {autoAlpha:0}, "<")
       .to(".close", {autoAlpha:1}, "<")
