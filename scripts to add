@@ -1,0 +1,14 @@
+
+https://css-tricks.com/the-trick-to-viewport-units-on-mobile/
+
+---
+/* ovo provjeri WHATTHAFUCK */
+* {
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-tap-highlight-color: transparent;
+}
+
+---
+

@@ -91,7 +91,7 @@ document.addEventListener ('DOMContentLoaded', ()=> {
       
       //tl.to(".v-menu", { rotate: 360, duration: 0.3, stagger: 0.1, transformOrigin: "right center"})
       
-      tl.to(".nav-mask", { duration: 0.3, transformOrigin: "right center", clipPath:"polygon(0 0, 0 0, 0 100%, 0% 100%})
+      tl.to(".nav-mask", { duration: 0.3, transformOrigin: "right center", clipPath:"polygon(0 0, 0 0, 0 100%, 0% 100%)"})
       .to(".open", {autoAlpha:1}, "<")
       .to(".close", {autoAlpha:0}, "<")
       
@@ -99,7 +99,7 @@ document.addEventListener ('DOMContentLoaded', ()=> {
     
   }
 
-  
+
 // ---------- PROJECTS - SWITCH LINE & THUMBNAIL
 
     var buttons = $(".but");
