@@ -113,7 +113,8 @@ linkclose.addEventListener('click', function () {
 const linkclose = document.querySelector(".link-nav");
   
   linkclose.addEventListener("click", () => {
-    console.log("Hello world!");
+    hide();
+     console.log("Hello world!");
   });
 
 
