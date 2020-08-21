@@ -123,11 +123,11 @@ workLinks.forEach((link, index, value) => {
     link.tl = gsap.timeline({paused: true});
   
   link.tl.fromTo(underline, {scaleX: 0, left: "0%",}, 
-  {scaleX: 100, duration: 0.3, ease: "power1.out",});
+  {scaleX: 1, duration: 0.3, ease: "power1.out",});
   		
   link.tl.add("midway");
   
-  link.tl.fromTo(underline, {scaleX: 100, left: "0%",}, 
+  link.tl.fromTo(underline, {scaleX: 1, left: "0%",}, 
   {scaleX: 0, left: "100%", duration: 0.3, ease: "power1.in", immediateRender: false});
 
   // Mouseenter
