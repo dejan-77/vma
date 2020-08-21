@@ -68,7 +68,7 @@ document.addEventListener ('DOMContentLoaded', ()=> {
     
    // tl.fromTo(".nav-mask", {width: "0%", transformOrigin: "left center"}, {duration: 0.3, width: "100%"})
    tl.fromTo(".nav-mask", {clipPath:"polygon(0 0, 0 0, 0 100%, 0% 100%)"}, 
-   {ease: "power4.inOut", transformOrigin: "left center", clipPath:"polygon(0 0, 100% 0, 100% 100%, 0% 100%)"})
+   {duration: 0.8, ease: "power2.inOut", transformOrigin: "left center", clipPath:"polygon(0 0, 100% 0, 100% 100%, 0% 100%)"})
       //.to(".fs-menu--column", {yPercent:0, duration:0.4, stagger:0.05, ease: "Expo.inOut"}, "<")
       .to(".open", {autoAlpha:0}, "<")
       .to(".close", {autoAlpha:1}, "<")
@@ -91,7 +91,7 @@ document.addEventListener ('DOMContentLoaded', ()=> {
       
       //tl.to(".v-menu", { rotate: 360, duration: 0.3, stagger: 0.1, transformOrigin: "right center"})
       
-      tl.to(".nav-mask", { duration: 0.3, clipPath:"polygon(0 0, 0 0, 0 100%, 0% 100%)"})
+      tl.to(".nav-mask", { duration: 0.8, clipPath:"polygon(0 0, 0 0, 0 100%, 0% 100%)"})
       .to(".open", {autoAlpha:1}, "<")
       .to(".close", {autoAlpha:0}, "<")
       
