@@ -68,7 +68,7 @@ document.addEventListener ('DOMContentLoaded', ()=> {
     
    // tl.fromTo(".nav-mask", {width: "0%", transformOrigin: "left center"}, {duration: 0.3, width: "100%"})
    tl.fromTo(".nav-mask", {clipPath:"polygon(0 0, 0 0, 0 100%, 0% 100%)"}, 
-   {delay:0.3, clipPath:"polygon(0 0, 100% 0, 100% 100%, 0% 100%)"})
+   {delay:0.3, transformOrigin: "left center", clipPath:"polygon(0 0, 100% 0, 100% 100%, 0% 100%)"})
       //.to(".fs-menu--column", {yPercent:0, duration:0.4, stagger:0.05, ease: "Expo.inOut"}, "<")
       .to(".open", {autoAlpha:0}, "<")
       .to(".close", {autoAlpha:1}, "<")
@@ -89,9 +89,9 @@ document.addEventListener ('DOMContentLoaded', ()=> {
       //tl.fromTo(".fs-menu--column", {yPercent:0}, {yPercent:-100, duration:0.4, stagger:0.05, ease: "Expo.inOut"})
       
       
-      tl.to(".v-menu", { rotate: 360, duration: 0.3, stagger: 0.1, transformOrigin: "right center"})
+      //tl.to(".v-menu", { rotate: 360, duration: 0.3, stagger: 0.1, transformOrigin: "right center"})
       
-      .to(".nav-mask", { duration: 0.3, transformOrigin: "right center", width: "0%"})
+      tl.to(".nav-mask", { duration: 0.3, transformOrigin: "right center", clipPath:"polygon(0 0, 0 0, 0 100%, 0% 100%})
       .to(".open", {autoAlpha:1}, "<")
       .to(".close", {autoAlpha:0}, "<")
       
