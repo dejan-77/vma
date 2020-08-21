@@ -101,15 +101,20 @@ document.addEventListener ('DOMContentLoaded', ()=> {
   }
 
 // HIDE MENU WHEN CLICK ON LINK
-
+/*
 var linkclose = document.querySelector('.link-nav');
 
 linkclose.addEventListener('click', function () {
   //hide();
-   console.log("cliknujo sam na LINK");
+  console.log("Hello world!");
   
-})
+})*/
 
+const linkclose = document.querySelector(".link-nav");
+  
+  linkclose.addEventListener("click", () => {
+    console.log("Hello world!");
+  });
 
 
 
