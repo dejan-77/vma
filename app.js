@@ -68,7 +68,7 @@ document.addEventListener ('DOMContentLoaded', ()=> {
     
    // tl.fromTo(".nav-mask", {width: "0%", transformOrigin: "left center"}, {duration: 0.3, width: "100%"})
    tl.fromTo(".nav-mask", {clipPath:"polygon(0 0, 0 0, 0 100%, 0% 100%)"}, 
-   {duration: 1, ease: "power2.inOut", transformOrigin: "left center", clipPath:"polygon(0 0, 100% 0, 100% 100%, 0% 100%)"})
+   {duration: 1, ease: "power1.inOut", clipPath:"polygon(0 0, 100% 0, 100% 100%, 0% 100%)"})
       //.to(".fs-menu--column", {yPercent:0, duration:0.4, stagger:0.05, ease: "Expo.inOut"}, "<")
       .to(".open", {autoAlpha:0}, "<")
       .to(".close", {autoAlpha:1}, "<")
