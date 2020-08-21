@@ -99,6 +99,7 @@ document.addEventListener ('DOMContentLoaded', ()=> {
     
   }
 
+  
 // ---------- PROJECTS - SWITCH LINE & THUMBNAIL
 
     var buttons = $(".but");
