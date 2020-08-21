@@ -68,7 +68,7 @@
 
 /* PROJECTS IMAGE CURSOR */
 .cursor {
-    position: absolute;
+   /* position: absolute; */
     width: 250px;
     height: 200px;
     top: 50%;
