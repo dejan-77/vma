@@ -101,7 +101,7 @@ document.addEventListener ('DOMContentLoaded', ()=> {
   }
 
 
-  
+
 // HIDE MENU WHEN CLICK ON LINK
 /*
 var linkclose = document.querySelector('.link-nav');
@@ -115,7 +115,7 @@ linkclose.addEventListener('click', function () {
 const linkclose = document.querySelector(".link-nav");
   
   linkclose.addEventListener("click", () => {
-   gsp.fromTo(".nav-mask", {clipPath:"polygon(0 0, 100% 0, 100% 100%, 0% 100%)"}, 
+   gsap.fromTo(".nav-mask", {clipPath:"polygon(0 0, 100% 0, 100% 100%, 0% 100%)"}, 
       {duration: 0.5, ease: "power1.out", clipPath:"polygon(100% 0, 100% 0, 100% 100%, 100% 100%)"})
      console.log("AJMOOOOOOOOO!");
   });
