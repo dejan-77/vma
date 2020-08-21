@@ -115,7 +115,7 @@ const linkclose = document.querySelector(".link-nav");
   linkclose.addEventListener("click", () => {
    gsp.fromTo(".nav-mask", {clipPath:"polygon(0 0, 100% 0, 100% 100%, 0% 100%)"}, 
       {duration: 0.5, ease: "power1.out", clipPath:"polygon(100% 0, 100% 0, 100% 100%, 100% 100%)"})
-     console.log("Hello world!");
+     console.log("AJMOOOOOOOOO!");
   });
 
 
