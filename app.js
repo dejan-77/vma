@@ -43,7 +43,7 @@ ScrollTrigger.refresh();
 // PLAY WHEN ALL CONTENT LOADED // da li prebaciti gore ili ugasiti skroz
 document.addEventListener ('DOMContentLoaded', ()=> {
 
- 
+ // --- MENU OPEN / CLOSE
   
   const { gsap } = window;
   
@@ -99,6 +99,56 @@ document.addEventListener ('DOMContentLoaded', ()=> {
       .set(" .nav-toggle", { pointerEvents: "all"});
     
   }
+
+// --- MENU HOVER BLUE LINE
+
+// Mouseenter function
+function enterAnimation(link, e, index) {
+  link.tl.tweenFromTo(0, "midway");
+}
+// Mouseleave function
+function leaveAnimation(link, e) {
+  link.tl.play();
+}
+// Animations variables
+let workLinkUnderlineAnimEnter;
+let workLinkUnderlineAnimLeave;
+
+// Get all links
+let workLinks = document.querySelectorAll(".link-nav");
+
+workLinks.forEach((link, index, value) => {
+  
+  let underline = link.querySelector(".menu-lajna");
+    link.tl = gsap.timeline({paused: true});
+  
+  link.tl.fromTo(underline, {width: "0%", left: "0%",}, 
+  {width: "100%", duration: 0.3, ease: "power1.out",});
+  		
+  link.tl.add("midway");
+  
+  link.tl.fromTo(underline, {width: "100%", left: "0%",}, 
+  {width: "0%", left: "100%", duration: 0.3, ease: "power1.in", immediateRender: false});
+
+  // Mouseenter
+  link.addEventListener("mouseenter", (e) => {
+    enterAnimation(link, e, index);
+  });
+
+  // Mouseleave
+  link.addEventListener("mouseleave", (e) => {
+    leaveAnimation(link, e);
+  });
+
+});
+
+
+
+
+
+
+
+
 
 
 // ---------- PROJECTS - SWITCH LINE & THUMBNAIL
