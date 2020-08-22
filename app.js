@@ -129,12 +129,12 @@ animation
 
 // --- 002 - INFO INTRO ANIMATION --------------------------------------------------------------------------------
 
-var animation = gsap.timeline({defaults:{duration:2, ease: "power3.inOut"}})
+var animation = gsap.timeline({defaults:{duration:0.5, ease: "power1.inOut"}})
 animation
 .set(".zero", {autoAlpha:1})
 
-.from(".lines", {stagger:0.02, yPercent:100, opacity:0})
-
+.from(".line", {stagger:0.02, y:30, opacity:0})
+//gsap.from(".char", {duration:0.5, opacity:0, stagger:0.02, y:30, ease:"power1.inOut"});
 
 
 
