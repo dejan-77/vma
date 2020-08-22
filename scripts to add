@@ -15,3 +15,11 @@ https://css-tricks.com/the-trick-to-viewport-units-on-mobile/
 Locomotive scroll cubic bezier!
 
 .5s cubic-bezier(.215,.61,.355,1)
+
+
+---
+/* provjeri da li koristiti ovo ili onaj drugi)
+
+$(window).on('load', function() { 
+
+    });

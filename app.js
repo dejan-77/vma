@@ -100,9 +100,7 @@ document.addEventListener ('DOMContentLoaded', ()=> {
 		
 	}
 
-
-
-// HIDE MENU WHEN CLICK ON LINK
+// --- HIDE MENU WHEN CLICK ON LINK
 
 $(".link-nav").click(function(e){
 	e.preventDefault();
@@ -114,27 +112,18 @@ $(".link-nav").click(function(e){
  console.log("AJMOOOOOOOOO!");
 });
 
+// --- 000 - HOMEPAGE INTRO ANIMATION --------------------------------------------------------------------------------
 
-/*
-var linkclose = document.querySelector('.link-nav');
+// SPLITTING 
+Splitting();
 
-linkclose.addEventListener('click', function () {
-	//hide();
-	console.log("Hello world!");
-	
-})*/
+//  CLIPPING PATH MASK REVEAL & TEXT REVEAL  
+var animation = gsap.timeline({defaults:{duration:2, ease: "power3.inOut"}})
+animation
+.set(".char", {autoAlpha:1}, "<")
+.from(".char", {stagger:0.02, yPercent:108}, "<0.1")
 
-/*
 
-const linkclose = document.querySelector(".link-nav");
-	
-	linkclose.addEventListener("click", () => {
-	 gsap.fromTo(".nav-mask", {clipPath:"polygon(0 0, 100% 0, 100% 100%, 0% 100%)"}, 
-			{duration: 0.5, ease: "power1.out", clipPath:"polygon(100% 0, 100% 0, 100% 100%, 100% 100%)"})
-		 console.log("AJMOOOOOOOOO!");
-	});
-
-*/
 
 
 // --- MENU HOVER BLUE LINE ----
