@@ -120,11 +120,11 @@ Splitting();
 //  CLIPPING PATH MASK REVEAL & TEXT REVEAL  
 var animation = gsap.timeline({defaults:{duration:2, ease: "power3.inOut"}})
 animation
-//.set(".char", {autoAlpha:1})
 .set(".zero", {autoAlpha:1})
-//.set(".milutin-heading", {autoAlpha:1}, "<")
 
 
+.to(".nav-line-1", {scaleX:1, rotate:45})
+.from(".nav-line-2", {scaleX:0, rotate:-45}, "<")
 .from(".char", {stagger:0.02, yPercent:105}, "<0.1")
 
 
