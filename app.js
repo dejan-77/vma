@@ -1,9 +1,7 @@
 // SMOOTH SCROLL
-
+///-------------------------------------MESSAGE TO YOU!
 // --- REGISTER SCROLLTRIGGER
 gsap.registerPlugin(ScrollTrigger);
-
-// --- SMOOTH SCROLL -----------------------------------------
 
 // Using Locomotive Scroll from Locomotive https://github.com/locomotivemtl/locomotive-scroll
 const locoScroll = new LocomotiveScroll({
@@ -37,7 +35,7 @@ ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
 // after everything is set up, refresh() ScrollTrigger and update LocomotiveScroll because padding may have been added for pinning, etc.
 ScrollTrigger.refresh();
 
-///
+
 /* FULLSCREEN NAVIGATION */
 
 // PLAY WHEN ALL CONTENT LOADED // da li prebaciti gore ili ugasiti skroz
