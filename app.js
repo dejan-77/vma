@@ -131,9 +131,9 @@ animation
 
 var animation = gsap.timeline({defaults:{duration:2, ease: "power3.inOut"}})
 animation
-//.set(".zero", {autoAlpha:1})
+.set(".zero", {autoAlpha:1})
 
-.from(".char", {stagger:0.02, yPercent:100, autoAlpha:0})
+.from(".lines", {stagger:0.02, yPercent:100, opacity:0})
 
 
 
