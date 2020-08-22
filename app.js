@@ -125,7 +125,8 @@ animation
 .from(".nav-line-1", {scaleX:0})
 .from(".nav-line-2", {scaleX:0}, "<0.1")
 .from(".char", {stagger:0.02, yPercent:105}, "<0.1")
-
+.from(".home-img-wrap", {yPercent:50}, "<0.1")
+.from(".triangle-wrap", {yPercent:80}, "<0.1")
 
 
 
