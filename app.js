@@ -93,7 +93,7 @@ document.addEventListener ('DOMContentLoaded', ()=> {
 			
 			tl.fromTo(".nav-mask", {clipPath:"polygon(0 0, 100% 0, 100% 100%, 0% 100%)"}, 
 			{duration: 0.5, ease: "power1.out", clipPath:"polygon(100% 0, 100% 0, 100% 100%, 100% 100%)"})
-			.to(".open", {autoAlpha:1}, "<")
+			.to(".open", {autoAlpha:1, }, "<")
 			.to(".close", {autoAlpha:0}, "<")
 			
 			.set(" .nav-toggle", { pointerEvents: "all"});
@@ -108,9 +108,11 @@ $(".link-nav").click(function(e){
 	e.preventDefault();
 	var url = $(this).attr('href');
 	gsap.fromTo(".nav-mask", {clipPath:"polygon(0 0, 100% 0, 100% 100%, 0% 100%)"}, 
-	{duration: 0.5, ease: "power1.out", clipPath:"polygon(100% 0, 100% 0, 100% 100%, 100% 100%)"})
+	{duration: 0.5, ease: "power1.out", clipPath:"polygon(100% 0, 100% 0, 100% 100%, 100% 100%)",  onComplete: function(){
+		window.location.href = url; }     })
  console.log("AJMOOOOOOOOO!");
 });
+
 
 /*
 var linkclose = document.querySelector('.link-nav');
