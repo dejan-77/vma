@@ -132,7 +132,7 @@ info
 .set(".zero", {autoAlpha:1})
 
 .from(".word", {stagger:0.02, rotate:30, y:100, opacity:0})
-.fromTo(".info-img-mask", {clipPath:"polygon(0 0, 100% 0, 100% 100%, 0% 100%)"}, 
+.fromTo(".info-img-mask", {clipPath:"polygon(100% 0, 100% 0, 100% 100%, 100% 100%)"}, 
 {duration: 0.5, ease: "power1.out", clipPath:"polygon(100% 0, 100% 0, 100% 100%, 100% 100%)"})  
 
 
