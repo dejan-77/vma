@@ -122,7 +122,6 @@ var animation = gsap.timeline({defaults:{duration:2, ease: "power3.inOut"}})
 animation
 .set(".zero", {autoAlpha:1})
 
-
 .from(".nav-line-1", {scaleX:0})
 .from(".nav-line-2", {scaleX:0}, "<0.1")
 .from(".char", {stagger:0.02, yPercent:105}, "<0.1")
