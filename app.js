@@ -37,7 +37,7 @@ ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
 // after everything is set up, refresh() ScrollTrigger and update LocomotiveScroll because padding may have been added for pinning, etc.
 ScrollTrigger.refresh();
 
-
+///
 /* FULLSCREEN NAVIGATION */
 
 // PLAY WHEN ALL CONTENT LOADED // da li prebaciti gore ili ugasiti skroz
