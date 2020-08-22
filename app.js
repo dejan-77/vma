@@ -118,15 +118,16 @@ $(".link-nav").click(function(e){
 Splitting();
 
 //  CLIPPING PATH MASK REVEAL & TEXT REVEAL  
-var animation = gsap.timeline({defaults:{duration:2, ease: "power3.inOut"}})
+var animation = gsap.timeline({defaults:{duration:1, ease: "power3.inOut"}})
 animation
 .set(".zero", {autoAlpha:1})
 
 .from(".nav-line-1", {scaleX:0, transformOrigin: "left center"})
 .from(".nav-line-2", {scaleX:0, transformOrigin: "left center"}, "<0.1")
+.from(".home-img-wrap", {yPercent:50}, "<")
+.from(".triangle-wrap", {y:500}, "<0.1")
 .from(".char", {stagger:0.02, yPercent:105}, "<0.1")
-.from(".home-img-wrap", {yPercent:50}, "<0.1")
-.from(".triangle-wrap", {yPercent:150}, "<0.1")
+
 
 
 
