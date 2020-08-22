@@ -109,7 +109,7 @@ $(".link-nav").click(function(e){
 	{duration: 0.5, ease: "power1.out", clipPath:"polygon(100% 0, 100% 0, 100% 100%, 100% 100%)",  
 	onComplete: function(){
 		window.location.href = url; }     })
- console.log("AJMOOOOOOOOO!");
+ //console.log("AJMOOOOOOOOO!");
 });
 
 // --- 000 - HOMEPAGE INTRO ANIMATION --------------------------------------------------------------------------------
