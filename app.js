@@ -109,7 +109,7 @@ $(".link-nav").click(function(e){
 	var url = $(this).attr('href');
 	gsap.fromTo(".nav-mask", {clipPath:"polygon(0 0, 100% 0, 100% 100%, 0% 100%)"}, 
 	{duration: 0.5, ease: "power1.out", clipPath:"polygon(100% 0, 100% 0, 100% 100%, 100% 100%)",  
-	onStart: function(){
+	onComplete: function(){
 		window.location.href = url; }     })
  console.log("AJMOOOOOOOOO!");
 });
