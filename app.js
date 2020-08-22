@@ -118,7 +118,7 @@ $(".link-nav").click(function(e){
 Splitting();
 
 //  CLIPPING PATH MASK REVEAL & TEXT REVEAL  
-var animation = gsap.timeline({defaults:{duration:1, ease: "power3.inOut"}})
+var animation = gsap.timeline({defaults:{duration:2, ease: "power3.inOut"}})
 animation
 .set(".zero", {autoAlpha:1})
 
