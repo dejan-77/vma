@@ -123,8 +123,8 @@ animation
 .set(".zero", {autoAlpha:1})
 
 
-.to(".nav-line-1", {scaleX:1, rotate:45})
-.from(".nav-line-2", {scaleX:0, rotate:-45}, "<")
+.from(".nav-line-1", {scaleX:0})
+.from(".nav-line-2", {scaleX:0}, "<0.1")
 .from(".char", {stagger:0.02, yPercent:105}, "<0.1")
 
 
