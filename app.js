@@ -121,7 +121,7 @@ Splitting();
 var animation = gsap.timeline({defaults:{duration:2, ease: "power3.inOut"}})
 animation
 .set(".char", {autoAlpha:1})
-.set(".vesna-heading", {autoAlpha:1}, "<")
+.set(".zero", {autoAlpha:1}, "<")
 .set(".milutin-heading", {autoAlpha:1}, "<")
 
 
