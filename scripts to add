@@ -23,3 +23,11 @@ Locomotive scroll cubic bezier!
 $(window).on('load', function() { 
 
     });
+
+ili ovo
+
+    window.addEventListener("load", function(){
+// ....
+});
+
+---

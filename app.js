@@ -122,7 +122,7 @@ var animation = gsap.timeline({defaults:{duration:2, ease: "power3.inOut"}})
 animation
 .set(".char", {autoAlpha:1})
 .set(".zero", {autoAlpha:1}, "<")
-.set(".milutin-heading", {autoAlpha:1}, "<")
+//.set(".milutin-heading", {autoAlpha:1}, "<")
 
 
 .from(".char", {stagger:0.02, yPercent:108}, "<0.1")
