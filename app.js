@@ -1,5 +1,9 @@
-// SMOOTH SCROLL
-///-------------------------------------MESSAGE TO YOU!
+ /*
+  ================================================================================
+    SMOOTH SCROLL + SCROLLTRIGGER
+  ================================================================================
+  */
+
 // --- REGISTER SCROLLTRIGGER
 gsap.registerPlugin(ScrollTrigger);
 
@@ -36,7 +40,11 @@ ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
 ScrollTrigger.refresh();
 
 
-/* FULLSCREEN NAVIGATION */
+ /*
+  ================================================================================
+    FULLSCREEN NAVIGATION
+  ================================================================================
+  */
 
 // PLAY WHEN ALL CONTENT LOADED // da li prebaciti gore ili ugasiti skroz
 document.addEventListener ('DOMContentLoaded', ()=> {
@@ -110,7 +118,11 @@ $(".link-nav").click(function(e){
  //console.log("AJMOOOOOOOOO!");
 });
 
-// --- 000 - HOMEPAGE INTRO ANIMATION --------------------------------------------------------------------------------
+ /*
+  ================================================================================
+    HOMEPAGE INTRO NAVIGATION
+  ================================================================================
+  */
 
 // SPLITTING 
 Splitting();
@@ -125,7 +137,11 @@ home
 .from(".home-img-wrap", {yPercent:50}, "<0.1")
 .from(".triangle-wrap", {yPercent:300}, "<0.2")
 
-// --- 002 - INFO INTRO ANIMATION --------------------------------------------------------------------------------
+ /*
+  ================================================================================
+    002 INTRO INFO NAVIGATION
+  ================================================================================
+ */
 
 var info = gsap.timeline({defaults:{duration:0.5, ease: "power1.inOut"}})
 info
@@ -149,7 +165,11 @@ info
 
 
 
-// --- MENU HOVER BLUE LINE -------------------------------------------------------------------------------------------
+ /*
+  ================================================================================
+    MENU HOVER BLUE LINE
+  ================================================================================
+  */
 
 // Mouseenter function
 function enterAnimation(link, e, index) {
@@ -200,7 +220,11 @@ workLinks.forEach((link, index, value) => {
 
 
 
-// ---------- PROJECTS - SWITCH LINE & THUMBNAIL
+ /*
+  ================================================================================
+    003 PROJECTS - SWITCH LINE AND THUMBNAIL VIEW
+  ================================================================================
+  */
 
 		var buttons = $(".but");
 		var boxes = $(".projekti-box");
