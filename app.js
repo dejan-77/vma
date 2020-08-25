@@ -137,7 +137,7 @@ home
 
 .from(".nav-line-1", {scaleX:0, transformOrigin: "left center"})
 .from(".nav-line-2", {scaleX:0, transformOrigin: "left center"}, "<0.1")
-.from(".char", {stagger:0.5, yPercent:105}, "<0.1")
+.from(".char", {stagger:0.02, yPercent:105}, "<0.1")
 .from(".home-img-wrap", {yPercent:50}, "<0.1")
 .from(".triangle-wrap", {yPercent:300}, "<0.2")
 
