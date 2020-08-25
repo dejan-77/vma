@@ -131,7 +131,7 @@ Splitting();
 CustomEase.create("hop", "0.215, 0.610, 0.355, 1.000");
 
 
-var home = gsap.timeline({defaults:{duration:2, ease: "hop"}})
+var home = gsap.timeline({defaults:{duration:1, ease: "hop"}})
 home
 .set(".zero", {autoAlpha:1})
 
