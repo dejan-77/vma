@@ -127,7 +127,11 @@ $(".link-nav").click(function(e){
 // SPLITTING 
 Splitting();
 
-var home = gsap.timeline({defaults:{duration:2, ease: "power3.inOut"}})
+// CUSTOM EASE CREATE
+CustomEase.create("hop", "0.215, 0.610, 0.355, 1.000");
+
+
+var home = gsap.timeline({defaults:{duration:2, ease: "hop"}})
 home
 .set(".zero", {autoAlpha:1})
 
