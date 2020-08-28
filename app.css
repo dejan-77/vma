@@ -74,7 +74,7 @@
     height: 22.500em;
     background: no-repeat 50% 50%;
     background-size: cover;
-    z-index: 1;
+    z-index: 0;
 }
 
 /* PROJECTS IMAGE CURSOR -- smallerscreen
