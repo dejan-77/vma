@@ -68,14 +68,14 @@
 
 
 /* PROJECTS IMAGE CURSOR */
-/* 
+
 .cursor {
     width: 350px;
     height: 200px;
     background: no-repeat 50% 50%;
     background-size: cover;
     z-index: 1;
-} */
+}
 
 /* PROJECTS IMAGE CURSOR -- smallerscreen
 @media (max-width: 900px){
