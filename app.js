@@ -48,7 +48,7 @@ ScrollTrigger.refresh();
 
 /* gsap.set(".cursor", {xPercent: -50, yPercent: -50}); */
 
-var ball = document.querySelector(".cursor");
+var ball = document.querySelector(".cursorXXX");
 var pos = { x: window.innerWidth / 2, y: window.innerHeight / 2 };
 var mouse = { x: pos.x, y: pos.y };
 var speed = 0.1;
