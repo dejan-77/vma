@@ -114,7 +114,7 @@ document.querySelector('.cursor').style.backgroundImage = "url(https://res.cloud
       })
 	});
 	
-
+// TOUCH SCREEN UBIJ
   /*   overlay.forEach(item => {
       item.addEventListener("touchmove", function(){
       flag = true;
