@@ -124,7 +124,7 @@ document.querySelector('.cursor').style.backgroundImage = "url(https://res.cloud
         })
       })
     });
-/* 
+
 	
     overlay.forEach(item => {item.addEventListener("mouseout", function(){
      flag = false;
@@ -138,7 +138,7 @@ document.querySelector('.cursor').style.backgroundImage = "url(https://res.cloud
      gsap.to(cursor, {duration:0.3, scale: 0.1, autoAlpha: 0});
     })
 	});
-	 */
+	 
 
  /*
   ================================================================================
