@@ -97,12 +97,25 @@ document.querySelector('.p-1').addEventListener("mouseover", function(){
 document.querySelector('.cursor').style.backgroundImage = "url(https://res.cloudinary.com/du25cd0bj/image/upload/v1579694456/driveImages/drive1_fkkxso.jpg)"});
 document.querySelector('.p-2').addEventListener("mouseover", function(){
 document.querySelector('.cursor').style.backgroundImage = "url(https://res.cloudinary.com/du25cd0bj/image/upload/v1579694456/driveImages/drive2_gcrxje.jpg)"});
-    
 document.querySelector('.p-3').addEventListener("mouseover", function(){
 document.querySelector('.cursor').style.backgroundImage = "url(https://res.cloudinary.com/du25cd0bj/image/upload/v1579694456/driveImages/drive3_mfhw4e.jpg)"});
 document.querySelector('.p-4').addEventListener("mouseover", function(){
 document.querySelector('.cursor').style.backgroundImage = "url(https://res.cloudinary.com/du25cd0bj/image/upload/v1579694456/driveImages/drive4_ztkutp.jpg)"});
-      
+document.querySelector('.p-5').addEventListener("mouseover", function(){
+	document.querySelector('.cursor').style.backgroundImage = "url(https://res.cloudinary.com/du25cd0bj/image/upload/v1579694456/driveImages/drive1_fkkxso.jpg)"});
+	document.querySelector('.p-6').addEventListener("mouseover", function(){
+	document.querySelector('.cursor').style.backgroundImage = "url(https://res.cloudinary.com/du25cd0bj/image/upload/v1579694456/driveImages/drive2_gcrxje.jpg)"});
+	document.querySelector('.p-7').addEventListener("mouseover", function(){
+	document.querySelector('.cursor').style.backgroundImage = "url(https://res.cloudinary.com/du25cd0bj/image/upload/v1579694456/driveImages/drive3_mfhw4e.jpg)"});
+	document.querySelector('.p-8').addEventListener("mouseover", function(){
+	document.querySelector('.cursor').style.backgroundImage = "url(https://res.cloudinary.com/du25cd0bj/image/upload/v1579694456/driveImages/drive4_ztkutp.jpg)"});
+	document.querySelector('.p-9').addEventListener("mouseover", function(){
+	document.querySelector('.cursor').style.backgroundImage = "url(https://res.cloudinary.com/du25cd0bj/image/upload/v1579694456/driveImages/drive3_mfhw4e.jpg)"});
+	document.querySelector('.p-10').addEventListener("mouseover", function(){
+	document.querySelector('.cursor').style.backgroundImage = "url(https://res.cloudinary.com/du25cd0bj/image/upload/v1579694456/driveImages/drive4_ztkutp.jpg)"});
+
+
+
  var flag = false;
     overlay.forEach(item => {
       item.addEventListener("mousemove", function(){
