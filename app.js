@@ -47,7 +47,7 @@ ScrollTrigger.refresh();
 */
 
 
-var cursor = document.querySelector('.cursor');
+/* var cursor = document.querySelector('.cursor');
 var overlay = document.querySelectorAll('.project-overlay');
   
 function moveCircle(e) {
@@ -99,7 +99,7 @@ document.querySelector('.cursor').style.backgroundImage = "url(https://res.cloud
      gsap.to(cursor, {duration:0.3, scale: 0.1, autoAlpha: 0});
     })
 	});
-	
+	 */
 
  /*
   ================================================================================

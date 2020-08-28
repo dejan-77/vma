@@ -68,17 +68,14 @@
 
 
 /* PROJECTS IMAGE CURSOR */
+/* 
 .cursor {
-   /* position: absolute;*/ 
     width: 350px;
     height: 200px;
-    /*top: 1%;
-    left: 1%;*/
-    /*margin: -100px 0 0 -100px;*/
     background: no-repeat 50% 50%;
     background-size: cover;
     z-index: 1;
-}
+} */
 
 /* PROJECTS IMAGE CURSOR -- smallerscreen
 @media (max-width: 900px){
@@ -93,13 +90,13 @@
     background-size: cover;
     z-index: 1;
   } */
-    .project {
+    /* .project {
       padding: 0px;
-    }
+    } */
   /*} */
-
+/* 
 
   .project {
    mix-blend-mode: difference;
 }
-  
+   */
