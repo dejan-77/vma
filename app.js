@@ -46,9 +46,9 @@ ScrollTrigger.refresh();
 */
 
 
-gsap.set(".ball", {xPercent: -50, yPercent: -50});
+gsap.set(".cursor", {xPercent: -50, yPercent: -50});
 
-var ball = document.querySelector(".ball");
+var ball = document.querySelector(".cursor");
 var pos = { x: window.innerWidth / 2, y: window.innerHeight / 2 };
 var mouse = { x: pos.x, y: pos.y };
 var speed = 0.1;
@@ -81,16 +81,16 @@ gsap.ticker.add(() => {
 */
 
 
-/* var cursor = document.querySelector('.cursor');
+var cursor = document.querySelector('.cursor');
 var overlay = document.querySelectorAll('.project-overlay');
   
-function moveCircle(e) {
+/* function moveCircle(e) {
 gsap.to(cursor, {duration:0.3,
       x: e.clientX,
       y: e.clientY,
       delay:0.03
   });
-    } 
+    }  */
     
     
 document.querySelector('.p-1').addEventListener("mouseover", function(){
@@ -133,7 +133,7 @@ document.querySelector('.cursor').style.backgroundImage = "url(https://res.cloud
      gsap.to(cursor, {duration:0.3, scale: 0.1, autoAlpha: 0});
     })
 	});
-	 */
+	
 
  /*
   ================================================================================
