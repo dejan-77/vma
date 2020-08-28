@@ -115,7 +115,7 @@ document.querySelector('.cursor').style.backgroundImage = "url(https://res.cloud
 	});
 	
 
-    overlay.forEach(item => {
+  /*   overlay.forEach(item => {
       item.addEventListener("touchmove", function(){
       flag = true;
       gsap.to(cursor, {duration:0.3, scale: 1, autoAlpha: 1});
@@ -123,7 +123,7 @@ document.querySelector('.cursor').style.backgroundImage = "url(https://res.cloud
         item.addEventListener("touchmove", moveCircle);
         })
       })
-    });
+    }); */
 
 	
     overlay.forEach(item => {item.addEventListener("mouseout", function(){
@@ -133,10 +133,11 @@ document.querySelector('.cursor').style.backgroundImage = "url(https://res.cloud
 	});
 	
 
-    overlay.forEach(item => {item.addEventListener("touchend", function(){
+    /* overlay.forEach(item => {item.addEventListener("touchend", function(){
      flag = false;
      gsap.to(cursor, {duration:0.3, scale: 0.1, autoAlpha: 0});
-    })
+	}) */
+	
 	});
 	 
 
