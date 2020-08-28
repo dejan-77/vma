@@ -70,8 +70,8 @@
 /* PROJECTS IMAGE CURSOR */
 
 .cursor {
-    width: 640px;
-    height: 320px;
+    width: 41.250em;
+    height: 22.500em;
     background: no-repeat 50% 50%;
     background-size: cover;
     z-index: 1;
