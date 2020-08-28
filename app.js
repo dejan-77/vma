@@ -46,7 +46,7 @@ ScrollTrigger.refresh();
 */
 
 
- gsap.set(".cursor", {xPercent: -50, yPercent: -50}); 
+ /*gsap.set(".cursor", {xPercent: -50, yPercent: -50}); */
 
 var ball = document.querySelector(".cursor");
 var pos = { x: window.innerWidth / 2, y: window.innerHeight / 2 };
@@ -115,7 +115,7 @@ document.querySelector('.cursor').style.backgroundImage = "url(https://res.cloud
 	});
 	
 // TOUCH SCREEN UBIJ
-  /*   overlay.forEach(item => {
+     overlay.forEach(item => {
       item.addEventListener("touchmove", function(){
       flag = true;
       gsap.to(cursor, {duration:0.3, scale: 1, autoAlpha: 1});
@@ -123,7 +123,7 @@ document.querySelector('.cursor').style.backgroundImage = "url(https://res.cloud
         item.addEventListener("touchmove", moveCircle);
         })
       })
-    }); */
+    }); 
 
 	
     overlay.forEach(item => {item.addEventListener("mouseout", function(){
@@ -132,13 +132,13 @@ document.querySelector('.cursor').style.backgroundImage = "url(https://res.cloud
     })
 	});
 	
-
-    /* overlay.forEach(item => {item.addEventListener("touchend", function(){
+// TOUCH SCREEN UBIJ
+     overlay.forEach(item => {item.addEventListener("touchend", function(){
      flag = false;
      gsap.to(cursor, {duration:0.3, scale: 0.1, autoAlpha: 0});
-	}) */
+	}) 
 	
-	/*});
+	});
 	 
 
  /*
