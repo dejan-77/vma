@@ -71,10 +71,10 @@ window.addEventListener("mousemove", e => {
 // MANFREDOV POMAK
 if(mouse.x > posX){
 	dir = "right";
-	gsap.to('.cursor',{x:-300, duration:0.5});
+	gsap.to('.projekti-head',{x:-300, duration:0.5});
   } else {
 	dir = "left";
-	gsap.to('.cursor', {x:0, duration:0.5}); 
+	gsap.to('.projekti-head', {x:0, duration:0.5}); 
   }
 
   console.log(dir, mouse.x, posX);
