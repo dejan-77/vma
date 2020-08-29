@@ -68,8 +68,8 @@ gsap.ticker.add((time, deltaTime) => {
 	var delta = deltaTime * fpms;
 	var dt = 1.0 - Math.pow(1.0 - speed, delta); 
   
-  pos.x += (mouse.x - pos.x) * dt;
-  pos.y += (mouse.y - pos.y) * dt;
+  pos.x += (mouse.x - pos.x -25) * dt;
+  pos.y += (mouse.y - pos.y -100) * dt;
   xSet(pos.x);
   ySet(pos.y);
 });
