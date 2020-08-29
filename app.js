@@ -66,24 +66,22 @@ var ySet = gsap.quickSetter(ball, "y", "px");
 window.addEventListener("mousemove", e => {    
   mouse.x = e.x;
   mouse.y = e.y;  
-});
+
 
 // MANFREDOV POMAK
-window.addEventListener("mousemove", e => {    
-	mouse.x = e.x;
-	mouse.y = e.y;  
-  
-	if(mouse.x > posX){
-	  dir = "right";
-	  gsap.to('.cursor',{x:-300, duration:0.5});
-	} else {
-	  dir = "left";
-	  gsap.to('.cursor', {x:0, duration:0.5}); 
-	}
-  
-	console.log(dir, mouse.x, posX);
-  });
-// -- end
+if(mouse.x > posX){
+	dir = "right";
+	gsap.to('.cursor',{x:-300, duration:0.5});
+  } else {
+	dir = "left";
+	gsap.to('.cursor', {x:0, duration:0.5}); 
+  }
+
+  console.log(dir, mouse.x, posX);
+//-- end
+
+});
+
 
 gsap.ticker.add((time, deltaTime) => {
   
