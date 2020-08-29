@@ -53,6 +53,11 @@ var pos = { x: window.innerWidth / 2, y: window.innerHeight / 2 };
 var mouse = { x: pos.x, y: pos.y };
 var speed = 0.1;
 
+//MANFREDOV POMAK
+var posX = window.innerWidth / 2;
+var dir = "right";
+// -- end
+
 var fpms = 60 / 1000;
 
 var xSet = gsap.quickSetter(ball, "x", "px");
@@ -63,13 +68,30 @@ window.addEventListener("mousemove", e => {
   mouse.y = e.y;  
 });
 
+// MANFREDOV POMAK
+window.addEventListener("mousemove", e => {    
+	mouse.x = e.x;
+	mouse.y = e.y;  
+  
+	if(mouse.x > posX){
+	  dir = "right";
+	  gsap.to('.cursor',{x:-300, duration:0.5});
+	} else {
+	  dir = "left";
+	  gsap.to('.cursor', {x:0, duration:0.5}); 
+	}
+  
+	console.log(dir, mouse.x, posX);
+  });
+// -- end
+
 gsap.ticker.add((time, deltaTime) => {
   
 	var delta = deltaTime * fpms;
 	var dt = 1.0 - Math.pow(1.0 - speed, delta); 
   
-  pos.x += (mouse.x - pos.x -200) * dt;
-  pos.y += (mouse.y - pos.y -100) * dt;
+  pos.x += (mouse.x - pos.x) * dt;
+  pos.y += (mouse.y - pos.y) * dt;
   xSet(pos.x);
   ySet(pos.y);
 });
